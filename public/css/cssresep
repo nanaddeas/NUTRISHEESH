@@ -1,0 +1,90 @@
+header {
+    background-color: #fff;
+    padding: 5px;
+    font-family: "Courier New", Courier, monospace; 
+  }
+  
+  body {
+    background-color: #fff;
+  }
+  
+  .column {
+    flex: 1;
+    max-width: 300px; /* Ubah sesuai kebutuhan lebar maksimum kolom */
+    margin: 10px; /* Tambahkan margin untuk memberi jarak antar kolom */
+  }
+  
+  .card {
+    box-shadow: none; /* tambahan shadow agar kliatan */
+    flex: 1; /* Mendistribusikan lebar secara merata */
+    width: 250px; /* Menentukan ukuran awal kolom menjadi lebih kecil, misalnya 150px */
+  }
+  
+  /* padding atas dan bawah dalam container */
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  
+  /* ngespasi banyak float */
+  .container::after, .row::after {
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #32CD32;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  .d-grid {
+    display: grid;
+  }
+  
+  .grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr); /* Menentukan dua kolom dengan lebar yang sama */
+  }
+  
+  .grid-gap-4 {
+    gap: 1rem; /* Memberi jarak (gap) antar kolom sebesar 1 rem */
+  }
+  
+  .d-flex {
+    display: flex;
+    flex-wrap: wrap; /* Kolom akan wrap ke baris baru jika melebihi lebar container */
+    justify-content: space-between; /* Menyusun kolom secara rata ke kiri dan kanan */
+  }
+
+  .column h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .column p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .column a {
+    color: black; /* Mengubah warna teks menjadi hitam */
+    text-decoration: none; /* Menghapus garis bawah */
+  }
+    
+  
+ 
+  
+  

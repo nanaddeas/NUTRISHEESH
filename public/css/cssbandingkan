@@ -1,0 +1,45 @@
+/* CSS untuk tata letak berdampingan dengan grid */
+.search_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 800px;
+    padding: 8px;
+    background: #fff;
+  }
+  
+  .search_section > h2 {
+    color: #065e1c;
+    text-align: center;
+    font-family: "Pixie Ring";
+    font-weight: bold;
+  }
+  
+  .search_section > form {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 10px;
+  }
+  
+  .search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%; /*untuk mengubah ukuran box agar penuh lebar kolom*/
+    height: 30px;
+    box-shadow: 3px 6px 10px 3px rgba(27, 196, 111, 0.2);
+    border: 3px solid rgba(27, 196, 111, 0.2); /* Ubah warna garis menjadi hijau dan ketebalannya menjadi 2px */
+  }
+  
+  .search_section > form > button {
+    background-color: #F8F8FF;
+    color: #065e1c;
+    border: 0;
+    border-radius: 5px;
+    width: 50px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
